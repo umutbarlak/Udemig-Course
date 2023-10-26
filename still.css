@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+body{
+    height: 100%;
+    
+    /* veya none diyebiliriz */
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 110px;
+    
+    box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+
+}
+nav header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+nav header a{
+    font-size: 35px;
+    color: rgb(26, 85, 85);
+}
+nav header h1{
+    color:  gray;
+
+}
+nav header h1 span{
+    color: rgb(26, 85, 85);
+}
+nav ul{
+    display: flex;  
+    gap: 10px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: gray;
+    transition: 0,5s;
+}
+nav ul li a:hover{
+    color: black;
+    border-bottom: 2px solid gray;
+    border-radius: 1px;
+    transition: 0,5s;
+}
+.course-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+
+}
+.course-content .course-sec{
+    text-align: center;
+    flex: 49%;
+
+}
+.course-content .image{
+    flex: 51%;
+    display: flex;
+    justify-content: center;
+}
+.course-content .image{
+    height: 300px;
+}
+.course-content .course-sec h2{
+    color: rgb(26, 85, 85) ;
+}
+.course-content .course-sec h2 span{
+    color: gray;
+}
+.course-content .course-sec .course-p{
+    color: gray;
+    margin:20px 10px 20px 10px;
+}
+.course-content .course-sec .btn-course{
+    border: none;
+    padding: 10px 20px;
+    background-color:rgb(26, 85, 85);
+    border-radius: 5px;
+    font-weight: bold;
+    color:white;
+    cursor: pointer;
+}
+.course-content .course-sec button:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+    background-color: black;
+}
+.info-content{
+    display: flex;
+    align-items: center;
+    background-color:rgb(74, 184, 184) ;    
+    margin-top:50px ;
+    border-radius: 10px;
+    box-shadow:1px 1px 10px;
+    position: relative;
+    z-index: 1;
+}
+.info-content .info-sec{
+    text-align: center;
+    flex: 1;
+}
+.image-sec{
+    flex: 1;
+    display: flex;
+    justify-content:center ;
+}
+.info-content .info-sec h3{
+    background-color:rgb(20, 82, 82) ;
+    color: white;
+    padding: 10px 20px;
+    border-top-right-radius: 50px;
+    position: absolute;
+    top:-20px;
+    width: 50%;
+    
+}
+.info-content .info-sec p{
+    color: gray;
+    margin: 20px 0 ;
+    font-size: 17px;
+}
+.info-content .info-sec button{
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(109, 109, 109);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.info-content .info-sec button:hover{
+    transition: .5s;
+    transform: scale(1.1);
+    background-color: rgba(134, 236, 202, 0.801);
+}
+.card-container{
+    margin-top: 50px;
+    text-align: center;
+}
+.card-container h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-bottom: 1px solid gray ;
+    color: rgb(85, 85, 85);
+    border-radius: 5px;
+}
+.card-content{
+    justify-content:center;
+    display: flex;
+}
+.card-content .card1{
+    margin:5px ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px ;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.card-content .card2{
+    margin:5px ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px ;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.card-content .card1 button{
+    border: none;
+    padding: 3px 7px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    color: white;
+    margin: 10px 0 10px 0;
+}
+.card-content .card2 button{
+    border: none;
+    padding: 3px 7px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    color: white;
+    margin: 10px 0 10px 0;
+}
+.card-content .card1 img{
+    background-color: gray;
+    border-radius: 50%;
+    margin-top: 20px;
+
+}
+.card-content .card2 img{
+    background-color: gray;
+    border-radius: 50%;
+    margin-top:20px;
+
+}
+.card-content .card1 p mark{
+    background-color: aqua;
+    color: white;
+}
+.card-content .card1 button{
+    cursor: pointer;
+    padding:5px 10px;
+    
+}
+.card-content .card1:hover{
+    transform: translateX(-5px);
+    transition: .5s;
+}
+.card-content .card2:hover{
+    transform: translateX(5px);
+    transition: .5s;
+}
+.card-content .card1 button:hover{
+    
+    transition: .5s;
+    background-color: rgba(66, 107, 93, 0.726);
+    transform: scale(1.2);
+}
+.card-content .card2 p mark{
+    background-color: aqua;
+    color: white;
+}
+.card-content .card2 button{
+    cursor: pointer;
+    padding:5px 10px;
+}
+.card-content .card2 button:hover{
+    transform: translateX(5px);
+    transition: .5s;
+    background-color: rgba(66, 107, 93, 0.726);
+    transform: scale(1.2);
+}
+footer{
+    padding: 20px;
+    margin-top: 100px;
+    border-top: 1px solid gray;
+    border-radius: 5px;
+
+}
+.footer-start{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+.footer-start .footer-area{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.footer-start .footer-area a{
+    text-decoration: none;
+    color: gray;
+}
+footer .bottom{
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid gray;
+    padding: 20px;
+}
+.yukari{
+    background-color: aquamarine;
+    display: flex;
+    position:fixed ;
+    bottom: 20px;
+    right: 30px;
+    height: 30px;
+    z-index: 2;
+ 
+}
+.yukari i{
+    width: 30px;
+    height: 30px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.yukari i:hover{
+    background-color: rgb(121, 121, 167);
+}
+
+
+
+
+
+
+
+
+@media(max-width:800px){
+    .course-content{
+        flex-direction: column-reverse;
+    }
+    nav ul{
+        display: none;
+    }
+    .info-content{
+        flex-direction:column-reverse;
+    }
+}
